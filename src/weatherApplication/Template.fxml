@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherApplication.TemplateController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="24.0" layoutY="14.0" text="Twoja lokalizacja:" />
+            <TextField fx:id="localCityname" layoutX="128.0" layoutY="10.0" />
+            <ImageView fx:id="actualyImage" fitHeight="115.0" fitWidth="115.0" layoutX="88.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="actualyLocalTemperature" contentDisplay="CENTER" layoutX="135.0" layoutY="188.0" prefHeight="25.0" prefWidth="34.0" />
+            <Label fx:id="localDate2" layoutX="129.0" layoutY="226.0" />
+            <Label fx:id="localDate3" layoutX="225.0" layoutY="226.0" />
+            <Label fx:id="localDate4" layoutX="76.0" layoutY="304.0" />
+            <Label fx:id="localDate5" layoutX="188.0" layoutY="304.0" />
+            <Label fx:id="localTemperature1" layoutX="36.0" layoutY="243.0" />
+            <Label fx:id="localTemperature2" layoutX="129.0" layoutY="243.0" />
+            <Label fx:id="localTemperature3" layoutX="225.0" layoutY="243.0" />
+            <Label fx:id="localTemperature4" layoutX="76.0" layoutY="323.0" />
+            <Label fx:id="localTemperature5" layoutX="188.0" layoutY="324.0" />
+            <Label layoutX="129.0" layoutY="46.0" text="Dzisiaj" />
+            <ImageView fx:id="localImage1" fitHeight="40.0" fitWidth="40.0" layoutX="30.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="localImage2" fitHeight="40.0" fitWidth="40.0" layoutX="123.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="localImage3" fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="localImage4" fitHeight="40.0" fitWidth="40.0" layoutX="70.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="localImage5" fitHeight="40.0" fitWidth="40.0" layoutX="182.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="245.0" layoutY="345.0" mnemonicParsing="false" onAction="#showInformationWeather" prefHeight="40.0" prefWidth="115.0" text="Sprawdź pogode" />
+            <Label fx:id="localDate1" layoutX="36.0" layoutY="226.0" />
+            <Label fx:id="errorInformation" alignment="CENTER" layoutX="216.0" layoutY="180.0" prefHeight="17.0" prefWidth="173.0" />
+         </children>
+      </Pane>
+      <Pane prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="Miejsce podróży" />
+            <TextField fx:id="cityName" layoutX="125.0" layoutY="10.0" />
+            <ImageView fx:id="rightImage" fitHeight="115.0" fitWidth="115.0" layoutX="95.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="date1" layoutX="36.0" layoutY="227.0" />
+            <Label layoutX="136.0" layoutY="49.0" text="Dzisiaj" />
+            <Label fx:id="date2" layoutX="136.0" layoutY="227.0" />
+            <Label fx:id="date3" layoutX="225.0" layoutY="227.0" />
+            <Label fx:id="temperature1" layoutX="36.0" layoutY="244.0" />
+            <Label fx:id="temperature2" layoutX="136.0" layoutY="244.0" />
+            <Label fx:id="temperature3" layoutX="225.0" layoutY="244.0" />
+            <Label fx:id="date4" layoutX="86.0" layoutY="309.0" />
+            <Label fx:id="date5" layoutX="186.0" layoutY="309.0" />
+            <Label fx:id="temperature4" layoutX="86.0" layoutY="327.0" />
+            <Label fx:id="temperature5" layoutX="186.0" layoutY="328.0" />
+            <ImageView fx:id="image1" fitHeight="40.0" fitWidth="40.0" layoutX="32.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image2" fitHeight="40.0" fitWidth="40.0" layoutX="130.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image3" fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image4" fitHeight="40.0" fitWidth="40.0" layoutX="80.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="image5" fitHeight="40.0" fitWidth="40.0" layoutX="182.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="rightTemperature" layoutX="139.0" layoutY="192.0" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
